@@ -1,5 +1,5 @@
 # OIB_ATM_SIMULATOR
-Multi-Bank ATM System (Java)
+Multi-Bank ATM System (using Java)
 
 The Multi-Bank ATM System is a console-based banking simulation developed in Java that models the core functionalities of a real-world automated teller machine. This project allows users to create accounts, authenticate using a secure PIN, perform deposits and withdrawals, transfer funds between accounts, and view detailed transaction histories. The system supports multiple banks, specifically State Bank of India (SBI), Bank of Baroda (BOB), and Punjab National Bank (PNB). Each bank maintains its own collection of accounts, and account numbers are automatically generated using a bank-specific prefix combined with a unique random number to ensure uniqueness.
 

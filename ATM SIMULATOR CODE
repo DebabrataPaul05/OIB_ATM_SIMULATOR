@@ -100,7 +100,7 @@ class Bank implements Serializable {
     }
 }
 
-public class ATMSystem {
+public class ATM_Simulator {
     static Scanner sc = new Scanner(System.in);
     static HashMap<String, Bank> bankMap = new HashMap<>();
     static final String FILE_NAME = "atm_data.ser";

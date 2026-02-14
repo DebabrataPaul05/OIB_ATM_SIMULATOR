@@ -1,5 +1,5 @@
 # OIB_ATM_SIMULATOR
-Multi-Bank ATM System (Java)
+Multi-Bank ATM System (using Java)
 Overview
 
 The Multi-Bank ATM System is a console-based banking simulation developed in Java. It models real-world ATM operations including account creation, authentication, deposits, withdrawals, fund transfers, and transaction history management.

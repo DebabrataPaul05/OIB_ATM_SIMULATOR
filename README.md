@@ -1,91 +1,10 @@
 # OIB_ATM_SIMULATOR
-Multi-Bank ATM System (using Java)
-Overview
+Multi-Bank ATM System (Java)
 
-The Multi-Bank ATM System is a console-based banking simulation developed in Java. It models real-world ATM operations including account creation, authentication, deposits, withdrawals, fund transfers, and transaction history management.
+The Multi-Bank ATM System is a console-based banking simulation developed in Java that models the core functionalities of a real-world automated teller machine. This project allows users to create accounts, authenticate using a secure PIN, perform deposits and withdrawals, transfer funds between accounts, and view detailed transaction histories. The system supports multiple banks, specifically State Bank of India (SBI), Bank of Baroda (BOB), and Punjab National Bank (PNB). Each bank maintains its own collection of accounts, and account numbers are automatically generated using a bank-specific prefix combined with a unique random number to ensure uniqueness.
 
-The system supports multiple banks and maintains persistent data using Java Serialization, allowing account information and transactions to be stored and reloaded across program executions.
+The application is built entirely using Core Java and demonstrates strong implementation of object-oriented programming principles such as encapsulation, modular design, and class-based architecture. The system is structured around four main classes: Transaction, which records transaction type, amount, details, and timestamp; Account, which manages user information, balance, and transaction records; Bank, which maintains a collection of accounts for each bank; and ATMSystem, which serves as the main driver class handling user interaction and overall system control. The use of Java Collections Framework components such as HashMap and ArrayList enables efficient storage and management of banks, accounts, and transaction histories.
 
-Supported Banks
+A key feature of this project is persistent data storage using Java Serialization. All account and transaction data are saved in a serialized file named atm_data.ser, ensuring that user information is preserved even after the program is terminated and restarted. The system performs automatic data saving after major operations such as account creation, deposits, withdrawals, transfers, and logout. It also includes input validation and exception handling to prevent invalid entries and ensure smooth execution.
 
-State Bank of India (SBI)
-
-Bank of Baroda (BOB)
-
-Punjab National Bank (PNB)
-
-Features
-
-Multi-bank account management
-
-Secure login using account number and PIN
-
-Account creation with auto-generated account numbers
-
-Deposit functionality
-
-Withdrawal functionality with balance validation
-
-Inter-bank fund transfer
-
-Transaction history with timestamps
-
-ATM receipt generation
-
-Persistent storage using serialized files
-
-Technologies Used
-
-Java (Core Java)
-
-Object-Oriented Programming (OOP)
-
-Java Collections Framework (HashMap, ArrayList)
-
-File Handling
-
-Java Serialization
-
-Exception Handling
-
-Project Structure
-
-The entire implementation is contained in a single file:
-
-ATMSystem.java
-
-The following classes are included:
-
-Transaction – Represents individual banking transactions
-
-Account – Manages account details and operations
-
-Bank – Handles multiple accounts within a bank
-
-ATMSystem – Main driver class that manages user interaction and system control
-
-A serialized data file named atm_data.ser is automatically created to store account data.
-
-How the System Works
-
-The user selects a bank.
-
-A new account can be created with a 4-digit PIN.
-
-The system generates a unique account number using the bank prefix and a random number.
-
-Users log in using their account number and PIN.
-
-After authentication, users can:
-
-Check balance
-
-Deposit money
-
-Withdraw money
-
-Transfer funds
-
-View transaction history
-
-All data is saved automatically after every operation.
+This project demonstrates practical application of file handling, serialization and deserialization, exception handling, and real-world system simulation using Java. It serves as a strong example of backend logic implementation for a banking system and can be further enhanced by integrating a graphical user interface, database connectivity, PIN encryption mechanisms, or additional banking features such as interest calculation and administrative controls.
